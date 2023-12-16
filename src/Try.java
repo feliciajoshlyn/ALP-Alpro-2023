@@ -127,6 +127,9 @@ public class Try {
                     break;
                 //List user's outcome w categories too
                 case 3:
+                    System.out.println("List your outcome!");
+                    System.out.println("1. Add outcome");
+                    System.out.println("2. Exit menu");
                     break;
                 //print out report
                 case 4:
