@@ -22,23 +22,25 @@ public class Try {
         int categories_choice;
 
         while (true) {
+            //main menu
             System.out.println("Budgeting App");
             System.out.println("Balance : ");
             System.out.println("=====Menu=====");
             System.out.println("1. Goals");
             System.out.println("2. Categories");
             System.out.println("3. Listing");
-            System.out.println("4. Exit app");
+            System.out.println("4. Print report");
+            System.out.println("5. Exit app");
             System.out.println("==============");
             System.out.println("Where would you like to go? (1-4)");
             menu = s.nextInt();
-            while (menu > 4 || menu < 1) {
+            while (menu > 5 || menu < 1) {
                 System.out.println("Input not valid, please input 1-4");
                 menu = s.nextInt();
             }
 
             switch (menu) {
-
+                //goal menu (ini mau dibuat ngeloop gmn yaa)
                 case 1:
                     System.out.println("What term goals would you like to set");
                     System.out.println("1. Short term goal");
@@ -50,6 +52,7 @@ public class Try {
                         term = s.nextInt();
                     }
                     switch (term) {
+                        //short term goal menu (aku mau set it like if there's no goal, tulisannya set goal but if there's a goal tulisannya edit goal tpi idk how and trs bisa ngeloop balik kl udah set atau edit goal)
                         case 1:
                             while (yes < 1) {
                                 System.out.println("set goal : " + st_goal + "/month");
@@ -62,7 +65,7 @@ public class Try {
                                     System.out.println("Input is not valid, please input 1-2");
                                     st_choice = s.nextInt();
                                 }
-
+                                //short term goal set up
                                 switch (st_choice) {
                                     case 1:
                                         System.out.println("Set up a short term goal!");
@@ -82,10 +85,11 @@ public class Try {
                                 }
 
                             }
+                            //long term goal menu
                         case 2:
                             break;
                     }
-
+                    // categories menu
                 case 2:
 //                            while(){
                     System.out.println("Categories!");
@@ -102,8 +106,8 @@ public class Try {
                     }
 //                    }
                     break;
-
-                case 4:
+                    // exit whole app
+                case 5:
                     System.exit(0);
                     break;
             }
