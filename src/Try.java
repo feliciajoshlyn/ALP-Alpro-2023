@@ -86,8 +86,11 @@ public class Try {
 
                             }
                             break;
-                            //long term goal menu
+                            //medium term goal menu
                         case 2:
+                            break;
+                            //long term goal menu
+                        case 3:
                             break;
                     }
                     break;
