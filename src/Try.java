@@ -125,7 +125,7 @@ public class Try {
                     }
 //                    }
                     break;
-                //List categories
+                //List user's outcome w categories too
                 case 3:
                     break;
                 //print out report
