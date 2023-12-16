@@ -32,10 +32,10 @@ public class Try {
             System.out.println("4. Print report");
             System.out.println("5. Exit app");
             System.out.println("==============");
-            System.out.println("Where would you like to go? (1-4)");
+            System.out.println("Where would you like to go? (1-5)");
             menu = s.nextInt();
             while (menu > 5 || menu < 1) {
-                System.out.println("Input not valid, please input 1-4");
+                System.out.println("Input not valid, please input 1-5");
                 menu = s.nextInt();
             }
 
@@ -85,6 +85,7 @@ public class Try {
                                 }
 
                             }
+                            break;
                             //long term goal menu
                         case 2:
                             break;
