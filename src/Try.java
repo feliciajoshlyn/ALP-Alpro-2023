@@ -90,6 +90,7 @@ public class Try {
                         case 2:
                             break;
                     }
+                    break;
                     // categories menu
                 case 2:
 //                            while(){
