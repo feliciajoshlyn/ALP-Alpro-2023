@@ -46,9 +46,10 @@ public class Try {
                     System.out.println("1. Short term goal");
                     System.out.println("2. Medium term goal");
                     System.out.println("3. Long term goal");
+                    System.out.println("4. Back to main menu");
                     term = s.nextInt();
-                    while (term > 3 || term < 1) {
-                        System.out.println("Input is not valid, please input 1-3");
+                    while (term > 4 || term < 1) {
+                        System.out.println("Input is not valid, please input 1-4");
                         term = s.nextInt();
                     }
                     switch (term) {
@@ -93,6 +94,9 @@ public class Try {
                         //long term goal menu (6 months?)
                         case 3:
 
+                            break;
+                        //exit goal menu
+                        case 4:
                             break;
                     }
                     break;
