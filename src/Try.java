@@ -52,10 +52,10 @@ public class Try {
                         term = s.nextInt();
                     }
                     switch (term) {
-                        //short term goal menu (aku mau set it like if there's no goal, tulisannya set goal but if there's a goal tulisannya edit goal tpi idk how and trs bisa ngeloop balik kl udah set atau edit goal)
+                        //short term goal menu(weekly) (aku mau set it like if there's no goal, tulisannya set goal but if there's a goal tulisannya edit goal tpi idk how and trs bisa ngeloop balik kl udah set atau edit goal)
                         case 1:
                             while (yes < 1) {
-                                System.out.println("set goal : " + st_goal + "/month");
+                                System.out.println("set goal : " + st_goal + "/week");
                                 System.out.println("1. Set goal");
                                 System.out.println("2. Edit goal");
                                 System.out.println("3. Exit menu");
@@ -65,7 +65,7 @@ public class Try {
                                     System.out.println("Input is not valid, please input 1-2");
                                     st_choice = s.nextInt();
                                 }
-                                //short term goal set up
+                                //short term goal set up (weekly)
                                 switch (st_choice) {
                                     case 1:
                                         System.out.println("Set up a short term goal!");
@@ -86,15 +86,17 @@ public class Try {
 
                             }
                             break;
-                            //medium term goal menu
+                        //medium term goal menu (monthly)
                         case 2:
+
                             break;
-                            //long term goal menu
+                        //long term goal menu (6 months?)
                         case 3:
+
                             break;
                     }
                     break;
-                    // categories menu
+                // categories menu
                 case 2:
 //                            while(){
                     System.out.println("Categories!");
@@ -111,7 +113,13 @@ public class Try {
                     }
 //                    }
                     break;
-                    // exit whole app
+                //List categories
+                case 3:
+                    break;
+                //print out report
+                case 4:
+                    break;
+                // exit whole app
                 case 5:
                     System.exit(0);
                     break;
