@@ -100,15 +100,27 @@ public class Try {
                 case 2:
 //                            while(){
                     System.out.println("Categories!");
+                    //put in array of categories here to display
+                    //System.out.println(categories);
                     System.out.println("1. Add");
                     System.out.println("2. Edit");
-                    System.out.print("choose: ");
+                    System.out.println("3. Exit menu");
+                    System.out.print("choose (1-3): ");
                     categories_choice = s.nextInt();
+                    while(categories_choice<1 || categories_choice>3){
+                        System.out.println("Input is not valid, please input 1-3!");
+                        categories_choice = s.nextInt();
+                    }
 
                     switch (categories_choice) {
+                        // add categories
                         case 1:
                             break;
+                        // edit categories
                         case 2:
+                            break;
+                        // exit categories menu
+                        case 3:
                             break;
                     }
 //                    }
