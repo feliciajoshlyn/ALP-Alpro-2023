@@ -81,11 +81,11 @@ public class Try {
                                 } else {
                                     System.out.println("1. Edit goal");
                                 }
-                                System.out.println("3. Exit menu");
+                                System.out.println("2. Exit menu");
                                 System.out.print("choose : ");
                                 st_choice = s.nextInt();
-                                while (st_choice > 3 || st_choice < 1) {
-                                    System.out.println("Input is not valid, please input 1-3");
+                                while (st_choice > 2 || st_choice < 1) {
+                                    System.out.println("Input is not valid, please input 1-2");
                                     st_choice = s.nextInt();
                                 }
                                 //short term goal set up (weekly)
@@ -118,11 +118,11 @@ public class Try {
                                 } else {
                                     System.out.println("1. Edit goal");
                                 }
-                                System.out.println("3. Exit menu");
+                                System.out.println("2. Exit menu");
                                 System.out.print("choose : ");
                                 mt_choice = s.nextInt();
-                                while (mt_choice > 3 || mt_choice < 1) {
-                                    System.out.println("Input is not valid, please input 1-3");
+                                while (mt_choice > 2 || mt_choice < 1) {
+                                    System.out.println("Input is not valid, please input 1-2");
                                     mt_choice = s.nextInt();
                                 }
                                 //medium term goal set up (monthly)
@@ -155,11 +155,11 @@ public class Try {
                                 } else {
                                     System.out.println("1. Edit goal");
                                 }
-                                System.out.println("3. Exit menu");
+                                System.out.println("2. Exit menu");
                                 System.out.print("choose : ");
                                 lt_choice = s.nextInt();
-                                while (lt_choice > 3 || lt_choice < 1) {
-                                    System.out.println("Input is not valid, please input 1-3");
+                                while (lt_choice > 2 || lt_choice < 1) {
+                                    System.out.println("Input is not valid, please input 1-2");
                                     lt_choice = s.nextInt();
                                 }
                                 //long term goal set up (6 months)
@@ -194,7 +194,10 @@ public class Try {
                     while (yes < 1) {
                         System.out.println("Categories!");
                         //put in array of categories here to display
-                        //System.out.println(categories);
+                        for (int i = 0; i < categories.size(); i++) {
+                                    System.out.println((i+1)+ "." + categories.get(i));
+                                }
+                        System.out.println("------------");
                         System.out.println("1. Add");
                         System.out.println("2. Edit");
                         System.out.println("3. Exit menu");
@@ -209,13 +212,12 @@ public class Try {
                             // add categories
                             case 1:
                                 System.out.println("Add a category!");
-                                for (int i = 0; i < categories.size(); i++) {
-                                    System.out.println(categories.get(i));
-                                }
+                                
                                 System.out.print("Category: ");
                                 //this i try use arraylist but i dont rlly understand!!!!!
                                 categories.add(s.next());
                                 break;
+                                
                             // edit categories
                             case 2:
                                 System.out.println("Remove a category!");
