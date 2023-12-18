@@ -233,6 +233,7 @@ public class Try {
                             case 2:
                                 System.out.println("Remove a category!");
                                 //shows the categories here
+                                System.out.println("");
                                 System.out.println("0. Exit");
                                 remove_choice = s.nextInt();
                                 while (remove_choice != 0) {
