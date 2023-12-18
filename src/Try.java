@@ -29,6 +29,7 @@ public class Try {
         int remove_choice;
         int list_choice;
         int outcome = 0;
+        int report_confirm;
         ArrayList<String> categories = new ArrayList<String>();
 
         while (true) {
@@ -195,8 +196,8 @@ public class Try {
                         System.out.println("Categories!");
                         //put in array of categories here to display
                         for (int i = 0; i < categories.size(); i++) {
-                                    System.out.println((i+1)+ "." + categories.get(i));
-                                }
+                            System.out.println((i + 1) + "." + categories.get(i));
+                        }
                         System.out.println("------------");
                         System.out.println("1. Add");
                         System.out.println("2. Edit");
@@ -212,12 +213,12 @@ public class Try {
                             // add categories
                             case 1:
                                 System.out.println("Add a category!");
-                                
+
                                 System.out.print("Category: ");
                                 //this i try use arraylist but i dont rlly understand!!!!!
                                 categories.add(s.next());
                                 break;
-                                
+
                             // edit categories
                             case 2:
                                 System.out.println("Remove a category!");
@@ -266,11 +267,19 @@ public class Try {
                     break;
                 //print out report
                 case 4:
-                    System.out.println("Report");
-                    System.out.println("Per week");
-                    System.out.println("Per month");
-                    System.out.println("Per 6 month");
-                    System.out.println("Categories!");
+                    do {
+                        System.out.println("Report");
+                        System.out.println("Per week");
+                        System.out.println("Per month");
+                        System.out.println("Per 6 month");
+                        System.out.println("Categories!");
+                        System.out.println("Done viewing? input '1'!");
+                        report_confirm = s.nextInt();
+                        while(report_confirm != 1){
+                            System.out.println("Input is not valid, please reinput");
+                            report_confirm = s.nextInt();
+                        }
+                    } while (report_confirm != 1);
                     //nnti ngeprint tiap category n jumlahnya
                     //trs nnti keluar total
                     break;
