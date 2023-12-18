@@ -210,11 +210,11 @@ public class Try {
                                 System.out.println("1. Add");
                                 System.out.println("2. Cancel");
                                 category_choice = s.nextInt();
-                                while(category_choice < 1 || category_choice >2){
+                                while (category_choice < 1 || category_choice > 2) {
                                     System.out.println("Input is not valid, please input 1-2!");
                                     category_choice = s.nextInt();
                                 }
-                                switch(category_choice){
+                                switch (category_choice) {
                                     //add category
                                     case 1:
                                         System.out.println("Category: ");
@@ -230,11 +230,11 @@ public class Try {
                                 //shows the categories here
                                 System.out.println("0. Exit");
                                 remove_choice = s.nextInt();
-                                while (remove_choice !=0){
+                                while (remove_choice != 0) {
                                     System.out.println("Input is not valid, please reinput!");
                                     remove_choice = s.nextInt();
                                 }
-                                switch(remove_choice){
+                                switch (remove_choice) {
                                     case 0:
                                         break;
                                 }
@@ -253,11 +253,11 @@ public class Try {
                     System.out.println("1. Add outcome");
                     System.out.println("2. Exit menu");
                     list_choice = s.nextInt();
-                    while (list_choice <1 || list_choice>2){
+                    while (list_choice < 1 || list_choice > 2) {
                         System.out.println("Input is not valid, please input 1-2!");
                         list_choice = s.nextInt();
                     }
-                    switch (list_choice){
+                    switch (list_choice) {
                         case 1:
                             System.out.println("Add outcome");
                             //ini yaapa ya ak bingung
