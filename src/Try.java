@@ -44,7 +44,7 @@ public class Try {
             //^kl ini kan hrs per bulan, nyimpennya gimana :(
             System.out.println("/" + lt_goal);
             //ini juga kan cz nnti clash sm per month n per week
-            System.out.println("=====Menu=====");
+            System.out.println("=====Menu======");
             System.out.println("1. Goals");
             System.out.println("2. Categories");
             System.out.println("3. Listing");
@@ -275,7 +275,7 @@ public class Try {
                         System.out.println("Categories!");
                         System.out.println("Done viewing? input '1'!");
                         report_confirm = s.nextInt();
-                        while(report_confirm != 1){
+                        while (report_confirm != 1) {
                             System.out.println("Input is not valid, please reinput");
                             report_confirm = s.nextInt();
                         }
