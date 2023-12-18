@@ -246,23 +246,28 @@ public class Try {
                 //nnti dijumlah per category
 
                 case 3:
-                    System.out.println("List your outcome!");
-                    System.out.println("1. Add outcome");
-                    System.out.println("2. Exit menu");
-                    list_choice = s.nextInt();
-                    while (list_choice < 1 || list_choice > 2) {
-                        System.out.println("Input is not valid, please input 1-2!");
+                    yes = 0;
+                    while (yes < 1) {
+                        System.out.println("List your outcome!");
+                        System.out.println("1. Add outcome");
+                        System.out.println("2. Exit menu");
                         list_choice = s.nextInt();
-                    }
-                    switch (list_choice) {
-                        case 1:
-                            System.out.println("Add outcome");
-                            //ini yaapa ya ak bingung
-//                            outcome = s.nextInt();
-                            System.out.println("Which category?");
-                            break;
-                        case 2:
-                            break;
+                        while (list_choice < 1 || list_choice > 2) {
+                            System.out.println("Input is not valid, please input 1-2!");
+                            list_choice = s.nextInt();
+                        }
+                        yes = 0;
+                        switch (list_choice) {
+                            case 1:
+                                System.out.println("Add outcome");
+                                //ini yaapa ya ak bingung
+//                                outcome = s.nextInt();
+                                System.out.println("Which category?");
+                                break;
+                            case 2:
+                                yes += 1;
+                                break;
+                        }
                     }
                     break;
                 //print out report
