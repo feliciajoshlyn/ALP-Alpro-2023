@@ -209,25 +209,12 @@ public class Try {
                             // add categories
                             case 1:
                                 System.out.println("Add a category!");
-                                System.out.println("1. Add");
-                                System.out.println("2. Cancel");
-                                category_choice = s.nextInt();
-                                while (category_choice < 1 || category_choice > 2) {
-                                    System.out.println("Input is not valid, please input 1-2!");
-                                    category_choice = s.nextInt();
+                                for (int i = 0; i < categories.size(); i++) {
+                                    System.out.println(categories.get(i));
                                 }
-                                switch (category_choice) {
-                                    //add category
-                                    case 1:
-                                        System.out.print("Category: ");
-                                        //this i try use arraylist but i dont rlly understand!!!!!
-                                        categories.add(s.next());
-                                        System.out.println(categories.get(0));
-                                        break;
-                                    //cancel
-                                    case 2:
-                                        break;
-                                }
+                                System.out.print("Category: ");
+                                //this i try use arraylist but i dont rlly understand!!!!!
+                                categories.add(s.next());
                                 break;
                             // edit categories
                             case 2:
@@ -254,6 +241,7 @@ public class Try {
                     break;
                 //List user's outcome w categories too
                 //nnti dijumlah per category
+
                 case 3:
                     System.out.println("List your outcome!");
                     System.out.println("1. Add outcome");
