@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -28,6 +29,7 @@ public class Try {
         int remove_choice;
         int list_choice;
         int outcome = 0;
+        ArrayList<String> categories = new ArrayList<String>();
 
         while (true) {
             //main menu
@@ -217,7 +219,10 @@ public class Try {
                                 switch (category_choice) {
                                     //add category
                                     case 1:
-                                        System.out.println("Category: ");
+                                        System.out.print("Category: ");
+                                        //this i try use arraylist but i dont rlly understand!!!!!
+                                        categories.add(s.next());
+                                        System.out.println(categories.get(0));
                                         break;
                                     //cancel
                                     case 2:
