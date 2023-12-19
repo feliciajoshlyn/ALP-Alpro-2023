@@ -92,18 +92,19 @@ public class Try {
                                 //short term goal set up (weekly)
                                 switch (st_choice) {
                                     case 1:
-                                        System.out.println("Set up a short term goal!");
-                                        System.out.print("goal : ");
-                                        //should it be able to make another goal or just one short term goal
-                                        st_goal = s.nextInt();
+                                        if (st_goal == 0) {
+                                            System.out.println("Set up a short term goal!");
+                                            System.out.print("goal : ");
+                                            //should it be able to make another goal or just one short term goal
+                                            st_goal = s.nextInt();
+                                        } else {
+                                            System.out.println("Edit goal");
+                                            System.out.println("Current goal: " + st_goal);
+                                            System.out.print("Change goal to : ");
+                                            st_goal = s.nextInt();
+                                        }
                                         break;
                                     case 2:
-                                        System.out.println("Edit goal");
-                                        System.out.println("Current goal: " + st_goal);
-                                        System.out.print("Change goal to : ");
-                                        st_goal = s.nextInt();
-                                        break;
-                                    case 3:
                                         yes += 1;
                                         break;
                                 }
@@ -129,18 +130,19 @@ public class Try {
                                 //medium term goal set up (monthly)
                                 switch (mt_choice) {
                                     case 1:
-                                        System.out.println("Set up a medium term goal!");
-                                        System.out.print("goal : ");
-                                        //should it be able to make another goal or just one short term goal
-                                        mt_goal = s.nextInt();
+                                        if (mt_choice == 0) {
+                                            System.out.println("Set up a medium term goal!");
+                                            System.out.print("goal : ");
+                                            //should it be able to make another goal or just one short term goal
+                                            mt_goal = s.nextInt();
+                                        } else {
+                                            System.out.println("Edit goal");
+                                            System.out.println("Current goal: " + mt_goal);
+                                            System.out.print("Change goal to : ");
+                                            mt_goal = s.nextInt();
+                                        }
                                         break;
                                     case 2:
-                                        System.out.println("Edit goal");
-                                        System.out.println("Current goal: " + mt_goal);
-                                        System.out.print("Change goal to : ");
-                                        mt_goal = s.nextInt();
-                                        break;
-                                    case 3:
                                         yes += 1;
                                         break;
                                 }
@@ -166,18 +168,19 @@ public class Try {
                                 //long term goal set up (6 months)
                                 switch (lt_choice) {
                                     case 1:
-                                        System.out.println("Set up a long term goal! (per 6 months)");
-                                        System.out.print("goal : ");
-                                        //should it be able to make another goal or just one short term goal
-                                        lt_goal = s.nextInt();
+                                        if (lt_choice == 0) {
+                                            System.out.println("Set up a long term goal! (per 6 months)");
+                                            System.out.print("goal : ");
+                                            //should it be able to make another goal or just one short term goal
+                                            lt_goal = s.nextInt();
+                                        } else {
+                                            System.out.println("Edit goal");
+                                            System.out.println("Current goal: " + lt_goal);
+                                            System.out.print("Change goal to : ");
+                                            lt_goal = s.nextInt();
+                                        }
                                         break;
                                     case 2:
-                                        System.out.println("Edit goal");
-                                        System.out.println("Current goal: " + lt_goal);
-                                        System.out.print("Change goal to : ");
-                                        lt_goal = s.nextInt();
-                                        break;
-                                    case 3:
                                         yes += 1;
                                         break;
                                 }
