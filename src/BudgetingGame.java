@@ -84,6 +84,6 @@ public class BudgetingGame {
     }
 
     public static void startGame(int mode) {
-        
+        System.out.println("");
     }
 }
