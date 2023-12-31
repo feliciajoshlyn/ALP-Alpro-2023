@@ -10,6 +10,7 @@ import java.util.Scanner;
  * @author Felicia
  */
 public class BudgetingGame {
+
     static Scanner s = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -54,7 +55,7 @@ public class BudgetingGame {
                     break;
 
                 default:
-                    System.out.println("Invalid input! dumbass\n");
+                    System.out.println("Invalid input!\n");
                     redo = 1;
                     break;
             }
@@ -73,7 +74,7 @@ public class BudgetingGame {
             choice = s.next() + s.nextLine();
 
             if (!choice.equalsIgnoreCase("y") && !choice.equalsIgnoreCase("n")) {
-                System.out.println("Invalid input! dumbass\n");
+                System.out.println("Invalid input!\n");
             }
         } while (!choice.equalsIgnoreCase("y") && !choice.equalsIgnoreCase("n"));
 
@@ -84,6 +85,29 @@ public class BudgetingGame {
     }
 
     public static void startGame(int mode) {
-        System.out.println("");
+        int food_bar = 0;
+        int fun_bar = 0;
+        
+        System.out.println("Welcome!\n Let's start our budgeting journey!");
+        System.out.println("Here are some of the rules for our game! ");
+        //rules
+        System.out.println("You are going to be given a random amount of money. \n list them into the set categories");
+        System.out.println("There are set targets that you have to take in mind as limits!");
+        System.out.println("You win if ");
+
+        //jdi kita kasih a week, tiap hari ada unexpected outcome
+        for (int i = 1; i < 8; i++) {
+            System.out.println("day " + i);
+            System.out.println("========");
+            System.out.println("food : " + food_bar);
+            System.out.println("fun : " + fun_bar);
+            System.out.println("transport"); // transport is everyday
+            System.out.println("food price :");
+            System.out.println("transport price");
+            
+        }
+        //report
+        System.out.println("game report!");
+        //score??
     }
 }
